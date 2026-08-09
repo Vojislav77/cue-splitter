@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+Name=CUE Splitter
+MimeType=application/x-cue;
+Actions=SplitToFiles;
+X-KDE-Submenu=CUE Splitter
+Icon=media-optical-audio
+
+[Desktop Action SplitToFiles]
+Name=Split & Encode...
+Icon=media-optical-audio
+Exec=@SCRIPT@ %f
