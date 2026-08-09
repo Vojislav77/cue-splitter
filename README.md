@@ -32,8 +32,8 @@ sudo dnf install ffmpeg kdialog
 ## Installation
 
 ```bash
-git clone https://github.com/<your-user>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/Vojislav77/cue-splitter.git
+cd cue-splitter
 ./install.sh
 ```
 
