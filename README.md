@@ -1,5 +1,9 @@
 # CUE Splitter
 
+<p align="center">
+  <img src="icon.png" alt="CUE Splitter icon" width="128">
+</p>
+
 Split a `.cue` music image (album as a single file) into separate, tagged tracks right from the file manager context menu.
 
 Adds a **CUE Splitter** entry to the Dolphin right-click menu on `.cue` files. Pick a format and quality, choose an output folder, and every track is extracted, tagged, and gets its cover embedded — in one go.
