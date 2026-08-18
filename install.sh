@@ -12,15 +12,15 @@ install -m 755 "$SRC_DIR/cue-splitter.sh" "$DEST_SCRIPTS/cue-splitter.sh"
 
 sed "s|@SCRIPT@|$DEST_SCRIPTS/cue-splitter.sh|" \
   "$SRC_DIR/cue-splitter.desktop" > "$DEST_SERVICES/cue-splitter.desktop"
-# Service menus must be marked executable to be authorized in this location
 chmod 755 "$DEST_SERVICES/cue-splitter.desktop"
 
-# Refresh KDE's menu database so the entry appears
+rm -f "$DEST_SERVICES/cue-splitter.json"
+
 command -v kbuildsycoca6 >/dev/null 2>&1 && kbuildsycoca6 >/dev/null 2>&1 || true
 
 echo "Installed to:"
 echo "  $DEST_SERVICES/cue-splitter.desktop"
 echo "  $DEST_SCRIPTS/cue-splitter.sh"
 echo ""
-echo "Now fully quit Dolphin (killall dolphin) and reopen it."
-echo "Right-click a .cue file -> CUE Splitter -> Split & Encode..."
+echo "Kill Dolphin (killall dolphin) and reopen it."
+echo "Right-click a .cue file -> Split & Encode..."
