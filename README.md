@@ -6,7 +6,7 @@
 
 Split a `.cue` music image (album as a single file) into separate, tagged tracks right from the file manager context menu.
 
-Adds a **CUE Splitter** entry to the Dolphin right-click menu on `.cue` files. Pick a format and quality, choose an output folder, and every track is extracted, tagged, and gets its cover embedded — in one go.
+Adds a **Split & Encode...** entry to the Dolphin right-click menu on `.cue` files. Pick a format and quality, choose an output folder, and every track is extracted, tagged, and gets its cover embedded — in one go.
 
 ## Features
 
@@ -32,8 +32,8 @@ sudo dnf install ffmpeg kdialog
 ## Installation
 
 ```bash
-git clone https://github.com/Vojislav77/cue-splitter.git
-cd cue-splitter
+git clone https://github.com/<your-user>/<your-repo>.git
+cd <your-repo>
 ./install.sh
 ```
 
@@ -43,7 +43,7 @@ Then fully quit and reopen Dolphin:
 killall dolphin
 ```
 
-Right-click a `.cue` file → **CUE Splitter → Split & Encode...**
+Right-click a `.cue` file → **Split & Encode...**
 
 > Note: the menu is registered per-user. Only the logged-in account that ran `install.sh` gets it.
 
